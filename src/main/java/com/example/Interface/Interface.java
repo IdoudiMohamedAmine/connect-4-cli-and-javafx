@@ -29,8 +29,15 @@ public class Interface {
     private TableColumn<Joueur, Integer> id = new TableColumn<>("id");
     private TableColumn<Joueur, String> nom = new TableColumn<>("nom");
     private TableColumn<Joueur, Integer> score = new TableColumn<>("Score");
-
-
+    public MenuItem getLancer() {
+        return lancer;
+    }
+    public MenuItem getListeJ(){
+        return ListeJ;
+    }
+    public MenuItem getMaxJ(){
+        return maxJ;
+    }
     public TableView<Joueur> getTableView(List<Joueur> lj) {
         this.id.setMinWidth(100);
         this.nom.setMinWidth(100);

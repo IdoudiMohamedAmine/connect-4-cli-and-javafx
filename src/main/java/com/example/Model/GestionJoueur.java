@@ -31,10 +31,10 @@ public class GestionJoueur {
 			rs.close();
 			ps.close();
 			conn.close();
-		} catch (SQLException e) {
+		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 			System.out.println("Execption");
-		} catch (ClassNotFoundException e) {
+		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
