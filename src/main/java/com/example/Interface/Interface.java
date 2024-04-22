@@ -17,27 +17,59 @@ import java.util.List;
 
 public class Interface {
     private Label label;
+    private Label startGame = new Label("Hello there press partie > lancer in the menu to start the game :)");
     private GridPane buttons = new GridPane(7, 6);
     private Button[][] button = new Button[6][7];
+
+
     private Menu partie = new Menu("Partie");
     private MenuItem lancer = new MenuItem("lancer");
     private Menu gestion = new Menu("gestion");
     private MenuItem ListeJ = new MenuItem("liste Joueur");
     private MenuItem maxJ = new MenuItem("max Joueur");
     private MenuBar menu = new MenuBar(partie, gestion);
+
+    private TableView<Joueur> maxPlayer = new TableView<>();
+    private TableColumn<Joueur, Integer> idMaxPlayer = new TableColumn<>("id");
+    private TableColumn<Joueur, String> nomMaxPlayer = new TableColumn<>("nom");
+    private TableColumn<Joueur, Integer> scoreMaxPlayer = new TableColumn<>("Score");
+
+
     private TableView<Joueur> tableView = new TableView<>();
     private TableColumn<Joueur, Integer> id = new TableColumn<>("id");
     private TableColumn<Joueur, String> nom = new TableColumn<>("nom");
     private TableColumn<Joueur, Integer> score = new TableColumn<>("Score");
+
+
+    public TableView<Joueur> getMaxPlayer(List<Joueur> joueurs) {
+        this.idMaxPlayer.setMinWidth(100);
+        this.nomMaxPlayer.setMinWidth(100);
+        this.scoreMaxPlayer.setMinWidth(100);
+
+        this.idMaxPlayer.setCellValueFactory(new PropertyValueFactory<>("id"));
+        this.nomMaxPlayer.setCellValueFactory(new PropertyValueFactory<>("nom"));
+        this.scoreMaxPlayer.setCellValueFactory(new PropertyValueFactory<>("score"));
+        this.maxPlayer.getColumns().addAll( idMaxPlayer,nomMaxPlayer, scoreMaxPlayer);
+        this.maxPlayer.setItems(FXCollections.observableList(joueurs));
+        return maxPlayer;
+    }
+
     public MenuItem getLancer() {
         return lancer;
     }
-    public MenuItem getListeJ(){
+
+    public Label getStartGame() {
+        return startGame;
+    }
+
+    public MenuItem getListeJ() {
         return ListeJ;
     }
-    public MenuItem getMaxJ(){
+
+    public MenuItem getMaxJ() {
         return maxJ;
     }
+
     public TableView<Joueur> getTableView(List<Joueur> lj) {
         this.id.setMinWidth(100);
         this.nom.setMinWidth(100);
@@ -47,10 +79,11 @@ public class Interface {
         this.nom.setCellValueFactory(new PropertyValueFactory<>("nom"));
         this.score.setCellValueFactory(new PropertyValueFactory<>("score"));
 
-        this.tableView.getColumns().addAll(id, nom, score);
+        this.tableView.getColumns().addAll(id,nom,score);
         this.tableView.setItems(FXCollections.observableList(lj));
         return this.tableView;
     }
+
     public void setTop() {
         this.partie.getItems().add(this.lancer);
         this.gestion.getItems().add(this.ListeJ);
@@ -62,7 +95,7 @@ public class Interface {
         this.setTop();
     }
 
-    public void SetGrid() {
+    public GridPane SetGrid() {
         for (int j = 0; j < 6; j++) {
             for (int i = 0; i < 7; i++) {
                 Button b = new Button("-");
@@ -77,15 +110,14 @@ public class Interface {
             }
         }
         this.buttons.setAlignment(Pos.CENTER);
+        return this.buttons;
     }
 
     public Button getButton(int j, int i) {
         return this.button[j][i];
     }
 
-    public GridPane getCenter() {
-        return this.buttons;
-    }
+
 
     public MenuBar getTop() {
         return this.menu;
