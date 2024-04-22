@@ -75,6 +75,15 @@ public class Controller {
 
         }
     }
+    public void setCouleurButton(int lig,int col,String color){
+        anInterface.getButton(5-lig,col).setStyle(
+                "-fx-background-radius: 150em;"
+                        + "-fx-min-width: 50px;"
+                        + "-fx-min-height: 50px;"
+                        + "-fx-max-width: 50px;"
+                        + "-fx-max-height: 50px;"+
+                        "-fx-background-color:"+color+";");
+    }
     public void gestionClick(int j,Partie p,Joueur j1)throws CoupException {
         int l =p.getPuissance().getLigneVideByColonne(j);
         p.getPuissance().setCoup(l,j,p.getJoueurCourant().getId());
