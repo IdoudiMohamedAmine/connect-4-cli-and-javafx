@@ -18,11 +18,11 @@ public class DAOPartie extends DAO<Partie> {
         Statement ps;
         ResultSet rs;
         try {
-            String requete = "select * from Partie ";
+            String requete = "select * from Partie";
             ps = conn.createStatement();
             rs = ps.executeQuery(requete);
             while (rs.next()) {
-                parties.add(new Partie(rs.getInt("id"),j.findById(new Joueur(rs.getInt("IdJoueur1"),null,0)),j.findById(new Joueur(rs.getInt("IdJoueur2"),null,0))));
+                parties.add(new Partie(rs.getInt("idPartie"),j.findById(new Joueur(rs.getInt("IdJoueur1"),null,0)),j.findById(new Joueur(rs.getInt("IdJoueur2"),null,0))));
             }
             rs.close();
             ps.close();
@@ -42,7 +42,7 @@ public class DAOPartie extends DAO<Partie> {
             PreparedStatement ps=conn.prepareStatement(requete);
             ps.setString(1,""+id.getId());
             rs = ps.executeQuery(requete);
-            partie=new Partie(rs.getInt("id"),j.findById(new Joueur(rs.getInt("IdJoueur1"),null,0)),j.findById(new Joueur(rs.getInt("IdJoueur2"),null,0)));
+            partie=new Partie(rs.getInt("idPartie"),j.findById(new Joueur(rs.getInt("IdJoueur1"),null,0)),j.findById(new Joueur(rs.getInt("IdJoueur2"),null,0)));
             rs.close();
             ps.close();
         }
@@ -65,7 +65,7 @@ public class DAOPartie extends DAO<Partie> {
             ps.setString(3,""+partie.getJ1().getScore());
             ps.setString(4,""+partie.getJ2().getScore());
             rs = ps.executeQuery(requete);
-            p=new Partie(rs.getInt("id"),j.findById(new Joueur(rs.getInt("IdJoueur1"),null,0)),j.findById(new Joueur(rs.getInt("IdJoueur2"),null,0)));
+            p=new Partie(rs.getInt("idPartie"),j.findById(new Joueur(rs.getInt("IdJoueur1"),null,0)),j.findById(new Joueur(rs.getInt("IdJoueur2"),null,0)));
             rs.close();
             ps.close();
         }
@@ -80,7 +80,7 @@ public class DAOPartie extends DAO<Partie> {
     public void delete(Partie partie) {
         ResultSet rs;
         try {
-            String requete = "DELETE FROM `Partie` WHERE id=? ";
+            String requete = "DELETE FROM `Partie` WHERE idPartie=? ";
             PreparedStatement ps=conn.prepareStatement(requete);
             ps.setString(1,""+partie.getId());
             rs = ps.executeQuery();
@@ -99,7 +99,7 @@ public class DAOPartie extends DAO<Partie> {
     public void update(Partie partie) {
         ResultSet rs;
         try {
-            String requete = "UPDATE `Partie` SET `idPartie`=?,`IdJoueur1`=?,`IdJoueur2`=?,`ScoreJoueur1`=?,`ScoreJoueur2`=? WHERE id=?";
+            String requete = "UPDATE `Partie` SET `idPartie`=?,`IdJoueur1`=?,`IdJoueur2`=?,`ScoreJoueur1`=?,`ScoreJoueur2`=? WHERE idPartie=?";
             PreparedStatement ps=conn.prepareStatement(requete);
             ps.setString(1,""+partie.getId());
             ps.setInt(2,partie.getJ1().getId());

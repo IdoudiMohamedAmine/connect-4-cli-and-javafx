@@ -1,5 +1,6 @@
 package com.example.controller;
 
+import com.example.DAO.DAOJoueur;
 import com.example.DAO.DAOPartie;
 import com.example.Interface.Interface;
 import com.example.Model.CoupException;
@@ -32,14 +33,17 @@ public class Controller {
         MenuItem lance=anInterface.getLancer();
         MenuItem exportp=anInterface.getExportP();
         MenuItem importP=anInterface.getImportP();
+        MenuItem listep=anInterface.getListep();
+        TableView Tpartie=anInterface.getPartie(new DAOPartie().findAll());
+        listep.setOnAction(event ->{this.root.setCenter(Tpartie);});
         lance.setOnAction(event ->{gameControlleur();});
         exportp.setOnAction(event->{
             export(anInterface.getexport(),anInterface.getExportpb(),anInterface.getIdp());
         });
-        TableView T=anInterface.getTableView(this.lj.getList());
+        TableView T=anInterface.getTableView(new DAOJoueur().findAll());
         listj.setOnAction(event ->{listejoueur(T);});
         List<Joueur> l= new ArrayList<>();
-        l.add(lj.getList().stream().max((a1, a2)->{return a1.getScore()-a2.getScore();}).get());
+        l.add(new DAOJoueur().findAll().stream().max((a1, a2)->{return a1.getScore()-a2.getScore();}).get());
         TableView m=anInterface.getMaxPlayer(l);
         max.setOnAction(event ->{maxJoueur(m);});
     }

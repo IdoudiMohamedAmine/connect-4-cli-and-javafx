@@ -1,16 +1,14 @@
 
 w
-java:S3740"/Provide the parametrized type for this generic.(©ÔÃÇÿÿÿÿÿ8ÄÅ½÷1J$935e394c-06e5-42b7-96b4-4960d193ce99
+java:S3740"/Provide the parametrized type for this generic.(©ÔÃÇÿÿÿÿÿ8¥ø¢‡ù1J$d750b889-975c-4dde-ab90-f9040c2d745a
 ¸
-java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(³ó§ìüÿÿÿÿ8ÆÅ½÷1J$85db8f5d-785c-4a0d-9fbe-776a4ff2893d
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(µšú‹8ÉÅ½÷1J$1a6981bc-42a2-4e91-a10f-3c291e626cbd
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(³ó§ìüÿÿÿÿ8¦ø¢‡ù1J$38c23ea3-7889-45f1-b053-ae696d24e5ce
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(µšú‹8©ø¢‡ù1J$7f30f074-a1e2-4ac3-93db-43b37e876a49
 c
-java:S1659" Declare "j2" on a separate line.(›Ê¨8İÅ½÷1J$e61a4c80-8839-41a6-a67c-e7692a4cb9e2
-m
-java:S1659"%Declare "scorej2" on a separate line.(İ­ö¯üÿÿÿÿ8İÅ½÷1J$2f9d9e8d-58cd-405c-aed7-31158d2fde71
-m	java:S1069"+Replace this use of System.out by a logger.(õŒµÔ8æÅ½÷1J$3dc01a12-db95-41b1-a3ae-a33024329971
-r	java:S106@"+Replace this use of System.out by a logger.(­…ø‹ùÿÿÿÿ8çÅ½÷1J$7723bd34-4b95-4a7e-93e1-92ba7552e3f3
-r	java:S106F"+Replace this use of System.out by a logger.(éƒåÕıÿÿÿÿ8èÅ½÷1J$e11d2559-b713-483e-906a-0c45e5d28a1a
-m	java:S106K"+Replace this use of System.out by a logger.(³ë…¨8éÅ½÷1J$4560ddb1-58f0-448a-bf77-aad9d0bdaf24
-l	java:S106Q"+Replace this use of System.out by a logger.(²Ïì08êÅ½÷1J$45ee414e-15e1-401b-bc3a-56e28c83eea1
-m	java:S106U"+Replace this use of System.out by a logger.(´ü²8êÅ½÷1J$026899fb-3b0e-46ae-a1ac-27c2b0a0eb81
+java:S1659" Declare "j2" on a separate line.(›Ê¨8¹ø¢‡ù1J$6683c3ad-2b09-4751-ba79-c3882dfaf40e
+m	java:S106:"+Replace this use of System.out by a logger.(õŒµÔ8Àø¢‡ù1J$8a289771-9fbd-4a55-9162-a7926e7282d2
+r	java:S106A"+Replace this use of System.out by a logger.(­…ø‹ùÿÿÿÿ8Áø¢‡ù1J$7d47c159-d063-419d-b40a-134cde4f5be9
+r	java:S106G"+Replace this use of System.out by a logger.(éƒåÕıÿÿÿÿ8Âø¢‡ù1J$72409d86-6078-43c7-ae6c-fc696cdc47e3
+m	java:S106L"+Replace this use of System.out by a logger.(³ë…¨8Ãø¢‡ù1J$29169c81-57b7-4337-8c96-52e2066b616e
+l	java:S106R"+Replace this use of System.out by a logger.(²Ïì08Äø¢‡ù1J$d0c597be-60ad-45c2-a188-eb0a9ae63f1f
+m	java:S106V"+Replace this use of System.out by a logger.(´ü²8Åø¢‡ù1J$61608ff2-b6ec-4d79-af51-961362e5ff19

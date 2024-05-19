@@ -1,25 +1,23 @@
 
-‹
-java:S1192"JDefine a constant instead of duplicating this literal "Execption" 5 times.(â±ÂôÿÿÿÿÿJ$e18a2a08-93f9-4d8e-85c1-56a00c8a0fab
-š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ì§“³ÿÿÿÿÿJ$204ee75d-34c8-462c-9c37-17aec8bcd309
 ’
-java:S2095="OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‚¾¨Ô8ÏÍ¾÷1J$0c19a71d-c191-4749-bacc-c8a8a7961020
+java:S1192"JDefine a constant instead of duplicating this literal "Execption" 5 times.(â±Âôÿÿÿÿÿ8ïãÒ†ù1J$42003b4f-4585-45b8-9360-bb0fe67da179
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ì§“³ÿÿÿÿÿ8òãÒ†ù1J$763a0bde-2afd-4d29-bfd0-3532c38f2346
+’
+java:S2095'"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‚¾¨Ô8¡äÒ†ù1J$bb9da05c-7839-4e35-872c-c20d0c6c0cbd
 Š
-java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(ã®“8ÎÍ¾÷1J$bd8a98aa-fa02-48ac-bc3d-bd73efb37a8c
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(ã®“8 äÒ†ù1J$fc05143e-0ace-4b9f-9b51-0817814e1fe7
 ’
-java:S2095f"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‚¾¨Ô8ÏÍ¾÷1J$09cc4a3d-8bf2-4432-a975-3ff1faddfea8
+java:S2095?"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‚¾¨Ô8 äÒ†ù1J$e8cfe537-1389-41e0-8381-8771f943f697
 ’
-java:S2095S"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‚¾¨Ô8ÏÍ¾÷1J$35c66969-6481-464e-a2ad-ce92ece64ab9
+java:S2095U"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‚¾¨Ô8 äÒ†ù1J$75bf9623-a411-4872-8e62-8b52907f0da8
 ’
-java:S2095'"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‚¾¨Ô8ÏÍ¾÷1J$cbc968ed-7f14-4804-aa78-32f846889d1c
-`
-java:S6905"Don't use the query "SELECT *".( Ù¦üÿÿÿÿJ$2dda1604-afc6-4d18-bf28-1150483dfd23
-k	java:S106"+Replace this use of System.out by a logger.(â±ÂôÿÿÿÿÿJ$b7cd4228-8b92-424c-8170-f9ea20b1bb25
-[
-java:S6905&"Don't use the query "SELECT *".(¾¼÷íJ$76a46419-d34f-4cdf-8645-1d151218dcdc
+java:S2095h"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‚¾¨Ô8 äÒ†ù1J$e0f6b42d-3c40-4013-9f7d-5e916aaf12bb
+g
+java:S6905"Don't use the query "SELECT *".( Ù¦üÿÿÿÿ8®äÒ†ù1J$d23cc2b6-d109-4cae-8794-97832127be13
+r	java:S106"+Replace this use of System.out by a logger.(â±Âôÿÿÿÿÿ8³äÒ†ù1J$d016a0eb-7f1d-4a70-b678-5b330292ad64
 b
-java:S6905&"Don't use the query "SELECT *".(¾¼÷í8ÚÍ¾÷1J$72f3d627-30bc-4f3b-9a71-71206041ba9a
-k	java:S1062"+Replace this use of System.out by a logger.(â±ÂôÿÿÿÿÿJ$ba961723-77ba-4491-9625-a224ba7ee300
-k	java:S106I"+Replace this use of System.out by a logger.(â±ÂôÿÿÿÿÿJ$7b58d512-3cbb-4769-8f72-03559c8051e0
-k	java:S106]"+Replace this use of System.out by a logger.(â±ÂôÿÿÿÿÿJ$dcd29fa0-e65e-4277-9f15-78c31ef0def4
-k	java:S106s"+Replace this use of System.out by a logger.(â±ÂôÿÿÿÿÿJ$034c1b78-1106-4cbb-a594-8747c5cbf32f
+java:S6905&"Don't use the query "SELECT *".(¾¼÷í8·äÒ†ù1J$24cf7270-196e-4116-9dc5-7d79e111db59
+r	java:S1064"+Replace this use of System.out by a logger.(â±Âôÿÿÿÿÿ8½äÒ†ù1J$b262d6b8-32d3-4ea0-a2f1-60440ddfb268
+r	java:S106K"+Replace this use of System.out by a logger.(â±Âôÿÿÿÿÿ8ÄäÒ†ù1J$d1cc2f71-f21d-4b68-8f14-637b295b6f3b
+r	java:S106_"+Replace this use of System.out by a logger.(â±Âôÿÿÿÿÿ8ÉäÒ†ù1J$baa4031a-30fd-4722-8c1d-c12651af5b4c
+r	java:S106u"+Replace this use of System.out by a logger.(â±Âôÿÿÿÿÿ8ÑäÒ†ù1J$a6fc1479-8e88-486b-8031-3a09a25d28c9

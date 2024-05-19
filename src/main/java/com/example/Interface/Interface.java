@@ -1,6 +1,7 @@
 package com.example.Interface;
 
 import com.example.Model.Joueur;
+import com.example.Model.Partie;
 import javafx.collections.FXCollections;
 import javafx.geometry.Pos;
 import javafx.scene.control.*;
@@ -30,6 +31,7 @@ public class Interface {
     private Menu partie = new Menu("Partie");
     private MenuItem lancer = new MenuItem("lancer");
     private Menu gestion = new Menu("gestion");
+    private MenuItem Listep = new MenuItem("liste Partie");
     private MenuItem ListeJ = new MenuItem("liste Joueur");
     private MenuItem maxJ = new MenuItem("max Joueur");
     private MenuItem exportP = new MenuItem("export partie");
@@ -42,6 +44,14 @@ public class Interface {
     private TableColumn<Joueur, String> nomMaxPlayer = new TableColumn<>("nom");
     private TableColumn<Joueur, Integer> scoreMaxPlayer = new TableColumn<>("Score");
 
+    private TableView<Partie> Tpartie= new TableView<>();
+    private TableColumn<Partie, Integer> idPartie = new TableColumn<>("id");
+    private TableColumn<Partie,Joueur> j1= new TableColumn<>("j1");
+    private TableColumn<Partie,Joueur> j2= new TableColumn<>("j2");
+    private TableColumn<Partie, Integer> scorej1 = new TableColumn<>("scorej1");
+    private TableColumn<Partie, Integer> scorej2 = new TableColumn<>("scorej2");
+
+
 
     private TableView<Joueur> tableView = new TableView<>();
     private TableColumn<Joueur, Integer> id = new TableColumn<>("id");
@@ -49,6 +59,21 @@ public class Interface {
     private TableColumn<Joueur, Integer> score = new TableColumn<>("Score");
 
 
+    public TableView<Partie> getPartie(List<Partie> lp){
+        this.idPartie.setMinWidth(100);
+        this.j1.setMinWidth(100);
+        this.j2.setMinWidth(100);
+        this.scorej1.setMinWidth(100);
+        this.scorej2.setMinWidth(100);
+        this.idPartie.setCellValueFactory(new PropertyValueFactory<>("id"));
+        this.j1.setCellValueFactory(new PropertyValueFactory<>("j1"));
+        this.j2.setCellValueFactory(new PropertyValueFactory<>("j2"));
+        this.scorej1.setCellValueFactory(new PropertyValueFactory<>("scoreJ1"));
+        this.scorej2.setCellValueFactory(new PropertyValueFactory<>("scoreJ2"));
+        this.Tpartie.getColumns().addAll(idPartie,j1,j2,scorej1,scorej2);
+        this.Tpartie.setItems(FXCollections.observableList(lp));
+        return Tpartie;
+    }
     public TableView<Joueur> getMaxPlayer(List<Joueur> joueurs) {
         this.idMaxPlayer.setMinWidth(100);
         this.nomMaxPlayer.setMinWidth(100);
@@ -61,11 +86,16 @@ public class Interface {
         this.maxPlayer.setItems(FXCollections.observableList(joueurs));
         return maxPlayer;
     }
+    public TableView<Partie> getTpartie() {
+        return Tpartie;
+    }
 
     public MenuItem getLancer() {
         return lancer;
     }
-
+    public MenuItem getListep() {
+        return Listep;
+    }
     public Label getStartGame() {
         return startGame;
     }
@@ -119,6 +149,7 @@ public class Interface {
     public void setTop() {
         this.partie.getItems().add(this.lancer);
         this.gestion.getItems().add(this.ListeJ);
+        this.gestion.getItems().add(this.Listep);
         this.gestion.getItems().add(this.maxJ);
         this.files.getItems().add(this.exportP);
         this.files.getItems().add(this.importP);

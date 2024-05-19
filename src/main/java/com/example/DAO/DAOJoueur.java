@@ -38,8 +38,10 @@ public class DAOJoueur extends  DAO<Joueur>{
             String requete = "select * from joueur where id=? ";
             PreparedStatement ps=conn.prepareStatement(requete);
             ps.setString(1,""+id.getId());
-            rs = ps.executeQuery(requete);
-            j=new Joueur((int)rs.getLong("id"),rs.getString("nom"),(int) rs.getLong("score"));
+            rs = ps.executeQuery();
+            if(rs.next()){
+                j=new Joueur((int)rs.getLong("id"),rs.getString("nom"),(int) rs.getLong("score"));
+            }
             rs.close();
             ps.close();
 

@@ -8,7 +8,8 @@ public class Partie {
 	private ArrayList<Coup> lisCoupJ = new ArrayList();
 	private int nbJetonJ1 = 21;
 	private int nbJetonJ2 = 21;
-	private int scorej1, scorej2;
+	private int scoreJ1;
+	private int scoreJ2;
 	private int rolejoueur;
 	private Game game;
 
@@ -121,19 +122,19 @@ public class Partie {
 	}
 
 	public int getScoreJ2() {
-		return scorej2;
+		return scoreJ2;
 	}
 
 	public void setScoreJ2(int scorej2) {
-		this.scorej2 = scorej2;
+		this.scoreJ2 = scorej2;
 	}
 
 	public int getScoreJ1() {
-		return scorej1;
+		return scoreJ1;
 	}
 
 	public void setScoreJ1(int scorej1) {
-		this.scorej1 = scorej1;
+		this.scoreJ1 = scorej1;
 	}
 	public int getNbJetonJ1() {
 		return nbJetonJ1;
