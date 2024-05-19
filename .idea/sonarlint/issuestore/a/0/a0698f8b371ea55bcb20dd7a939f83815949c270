@@ -1,0 +1,13 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ñ¶Íğûÿÿÿÿ8Å› ½÷1J$c1cce126-c6ea-4108-bbd0-041681ffb7e6
+˜	java:S116!"QRename this field "ListeJ" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–ÛË½ûÿÿÿÿ8Ş› ½÷1J$c234a111-b672-4bca-b691-41645ecd12e2
+‘	java:S100„"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óß”¿8ğ› ½÷1J$cdc557c8-8021-4177-95a6-06de51b105e5
+x
+java:S1128	"5Remove this unused import 'javafx.scene.layout.HBox'.(äê…8‡ƒ¡½÷1J$61eb2902-0ba4-46d7-a8e8-c225d0f59d76
+a
+java:S1128
+"Remove this duplicated import.(´¶²Æ8õ› ½÷1J$1e9aab73-0f2c-4bd6-8bd2-a907f422876e
+†
+java:S1128">Remove this unused import 'javafx.collections.ObservableList'.(ÄÜ€éüÿÿÿÿ8‡ƒ¡½÷1J$09782a1c-1bf5-4341-a1ab-87a92311a461
+}
+java:S1128"5Remove this unused import 'java.security.PrivateKey'.(‘äÄîúÿÿÿÿ8‡ƒ¡½÷1J$0f19d337-68a0-460f-8806-a324f0962752

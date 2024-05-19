@@ -1,0 +1,29 @@
+
+’
+java:S1192"JDefine a constant instead of duplicating this literal "Execption" 5 times.(â±Âôÿÿÿÿÿ8‘†Ê»÷1J$c401c36b-c3b9-464b-b2d8-106bc5617054
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ì§“³ÿÿÿÿÿ8“†Ê»÷1J$544cc671-d567-428d-9a25-77a3e8a94438
+Š
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(ã®“8¬†Ê»÷1J$a5157144-7aad-4d1f-a840-c78481ea2baf
+’
+java:S2095`"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‚¾¨Ô8¬†Ê»÷1J$bffe05cc-f57c-43a4-ba29-39ef2e49c0f7
+’
+java:S2095:"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‚¾¨Ô8¬†Ê»÷1J$8b3aeb4a-ff81-4a36-b2e7-b99a1b263084
+’
+java:S2095'"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‚¾¨Ô8¬†Ê»÷1J$8e3cb1fc-e3d9-4c32-b8e7-dc2888977186
+’
+java:S2095Q"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‚¾¨Ô8¬†Ê»÷1J$ce0ecd8a-59f9-44ce-a67b-24695bb9aabd
+b
+java:S6905"Don't use the query "SELECT *".(³³Éú8±†Ê»÷1J$602f31bf-5a8f-4aa8-8e44-d28e1926dc85
+r	java:S106"+Replace this use of System.out by a logger.(â±Âôÿÿÿÿÿ8²†Ê»÷1J$75b1f11f-4bf4-4243-a327-4d49f6907a70
+b
+java:S6905&"Don't use the query "SELECT *".(Øøï8´†Ê»÷1J$66561d9f-ad13-42c2-b708-02e7b4863c46
+b
+java:S6905&"Don't use the query "SELECT *".(Øøï8´†Ê»÷1J$33544fe4-087b-48f9-a651-1250fceaae00
+r	java:S106/"+Replace this use of System.out by a logger.(â±Âôÿÿÿÿÿ8µ†Ê»÷1J$bb7f858f-1a10-42b6-b653-4dc70bce4369
+r	java:S106F"+Replace this use of System.out by a logger.(â±Âôÿÿÿÿÿ8¸†Ê»÷1J$a4bf062c-c384-4160-9ba5-35330d170081
+j
+java:S1481N"'Remove this unused "rs" local variable.(¶¨ÜŒ8º†Ê»÷1J$f327805d-29c3-4007-9341-310c1c66e521
+r	java:S106W"+Replace this use of System.out by a logger.(â±Âôÿÿÿÿÿ8»†Ê»÷1J$56f3ed00-ed1b-4815-bb35-205e5b1b503a
+j
+java:S1481]"'Remove this unused "rs" local variable.(¶¨ÜŒ8¼†Ê»÷1J$855e50d5-9a6c-4b90-91ab-0889d51e524b
+r	java:S106h"+Replace this use of System.out by a logger.(â±Âôÿÿÿÿÿ8½†Ê»÷1J$08566cb4-037f-417b-b56c-be28683307cb

@@ -1,0 +1,24 @@
+
+8
+java:S1643“"Use a StringBuilder instead.(ÿêıÜûÿÿÿÿ
+3
+java:S1643š"Use a StringBuilder instead.(äã–ê
+8
+java:S1643œ"Use a StringBuilder instead.(­ş‡¸ûÿÿÿÿ
+8
+java:S1643 "Use a StringBuilder instead.(ÎÕºÿıÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(µšú‹
+7
+java:S1170"!Make this final field static too.(ŠºÓÉ
+7
+java:S1170"!Make this final field static too.(Ğ¾úó
+=
+java:S1659""Declare "idJ2" on a separate line.(â•È—üÿÿÿÿ
+W
+java:S1126"AReplace this if-then-else statement by a single return statement.(©Ó¹À
+\
+java:S1126]"AReplace this if-then-else statement by a single return statement.(…ªêÍøÿÿÿÿ
+W
+java:S1126i"AReplace this if-then-else statement by a single return statement.(øĞÛå
+\
+java:S1126z"AReplace this if-then-else statement by a single return statement.(…ªêÍøÿÿÿÿ

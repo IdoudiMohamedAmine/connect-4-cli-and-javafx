@@ -1,0 +1,19 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸æ¤•
+C
+java:S1604"(Make this anonymous inner class a lambda(ŸÖ€ùúÿÿÿÿ
+{
+java:S1488."`Immediately return this expression instead of assigning it to the temporary variable "resultat".(ÛÅ‹¬ùÿÿÿÿ
+{
+java:S14885"`Immediately return this expression instead of assigning it to the temporary variable "resultat".(ÛÅ‹¬ùÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(µšú‹
+
+java:S62040"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹
+
+java:S62047"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹
+D
+java:S1905>")Remove this unnecessary cast to "Joueur".(Ê¸Íÿÿÿÿÿ
+W
+java:S1126?"AReplace this if-then-else statement by a single return statement.(»Òş
+;
+java:S1128"%Remove this unused import 'java.sql'.(´İ…Å

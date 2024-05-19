@@ -14,10 +14,10 @@ public class Joueur implements Comparable<Joueur> {
 		this.score = score;
 	}
 	public void incrementerScore() {
-		this.score++;
+		this.score=this.score+10;
 	}
 	public void decrementerScore() {
-		this.score--;
+		this.score=this.score-10;
 	}
 	
 	public Joueur(int id,String nom,int score ) {

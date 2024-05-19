@@ -49,7 +49,7 @@ public class AppPuissance {
 		Joueur j1 = new Joueur(1, "ali", 0);
 		Joueur j2 = new Joueur(2, "sonia", 0);
 		boolean fin = false;
-		Partie partieJeu = new Partie(j1, j2);
+		Partie partieJeu = new Partie(1, j1, j2);
 		partieJeu.lancerPartie();
 	}
 

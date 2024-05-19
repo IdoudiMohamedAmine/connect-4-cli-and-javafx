@@ -1,0 +1,29 @@
+
+
+java:S1192"JDefine a constant instead of duplicating this literal "IdJoueur1" 3 times.(ôæÖš8éµóƒù1J$19006d14-fe2b-438f-88fc-9b960eecaa08
+
+java:S1192"JDefine a constant instead of duplicating this literal "IdJoueur2" 3 times.(ôæÖš8êµóƒù1J$41aba52f-9597-4b6a-8867-3bdd14c5186c
+’
+java:S1192 "JDefine a constant instead of duplicating this literal "Execption" 5 times.(â±Âôÿÿÿÿÿ8ëµóƒù1J$b924739d-f996-442c-be99-28ba1dee23d6
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ì§“³ÿÿÿÿÿ8îµóƒù1J$06eacce7-cf08-46fa-aa4a-15b9f2566e64
+’
+java:S2095>"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‚¾¨Ô8›¶óƒù1J$b62f0c5d-ffed-4ea5-ac94-7a570cdc3374
+’
+java:S2095T"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‚¾¨Ô8›¶óƒù1J$fd56c384-13c3-41c6-9c0b-5b893e1f9cc1
+Š
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(ã®“8›¶óƒù1J$b9cbb980-d24c-4893-8e16-3fc141ea677f
+’
+java:S2095*"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‚¾¨Ô8›¶óƒù1J$bfa6a9a1-d596-4a46-85c5-c7d64be9a3de
+’
+java:S2095g"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‚¾¨Ô8›¶óƒù1J$56e5491a-59e5-4daa-b8a0-9352ef28f42e
+b
+java:S6905"Don't use the query "SELECT *".(ÏÁ‹8£¶óƒù1J$578c9165-a2a6-4259-a57e-43d81bfb78e3
+r	java:S106 "+Replace this use of System.out by a logger.(â±Âôÿÿÿÿÿ8©¶óƒù1J$0db93758-5d2e-4f35-94a9-bda41cbe52a5
+b
+java:S6905)"Don't use the query "SELECT *".( ƒÙï8®¶óƒù1J$c0924f8f-c4f8-4a9e-a580-d2487a518d80
+b
+java:S6905)"Don't use the query "SELECT *".( ƒÙï8°¶óƒù1J$0b6398c1-69b0-439b-b82e-f687387b7c1a
+r	java:S1063"+Replace this use of System.out by a logger.(â±Âôÿÿÿÿÿ8µ¶óƒù1J$5929d617-1379-44e8-a1d0-ed5762c04afa
+r	java:S106J"+Replace this use of System.out by a logger.(â±Âôÿÿÿÿÿ8Â¶óƒù1J$2a969b98-f388-45b7-b3d0-8cedc745c72c
+r	java:S106^"+Replace this use of System.out by a logger.(â±Âôÿÿÿÿÿ8È¶óƒù1J$5975ee67-3c9e-4348-8e35-67bb290c1c70
+r	java:S106t"+Replace this use of System.out by a logger.(â±Âôÿÿÿÿÿ8Ó¶óƒù1J$70449b66-7b1f-4618-996c-006f568116ca

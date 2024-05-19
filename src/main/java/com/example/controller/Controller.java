@@ -1,5 +1,6 @@
 package com.example.controller;
 
+import com.example.DAO.DAOPartie;
 import com.example.Interface.Interface;
 import com.example.Model.CoupException;
 import com.example.Model.GestionJoueur;
@@ -7,7 +8,10 @@ import com.example.Model.Joueur;
 import com.example.Model.Partie;
 import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,8 +30,11 @@ public class Controller {
         MenuItem listj=anInterface.getListeJ();
         MenuItem max=anInterface.getMaxJ();
         MenuItem lance=anInterface.getLancer();
-        lance.setOnAction(event ->{
-            gameControlleur();
+        MenuItem exportp=anInterface.getExportP();
+        MenuItem importP=anInterface.getImportP();
+        lance.setOnAction(event ->{gameControlleur();});
+        exportp.setOnAction(event->{
+            export(anInterface.getexport(),anInterface.getExportpb(),anInterface.getIdp());
         });
         TableView T=anInterface.getTableView(this.lj.getList());
         listj.setOnAction(event ->{listejoueur(T);});
@@ -50,14 +57,12 @@ public class Controller {
         this.root.setRight(null);
     }
     public void gameControlleur(){
-        Joueur j1 = lj.getList().get(0);
-        Joueur j2 = lj.getList().get(1);
-        Partie p=new Partie(j1,j2);
+        Partie p=new Partie();
         this.root.setTop(anInterface.getTop());
         this.root.setCenter(anInterface.SetGrid());
-        this.root.setLeft(anInterface.getLeft(j1));
-        this.root.setRight(anInterface.getRight(j2));
-        gestionAction(p,j1,j2);
+        this.root.setLeft(anInterface.getLeft(p.getJ1()));
+        this.root.setRight(anInterface.getRight(p.getJ2()));
+        gestionAction(p,p.getJ1(),p.getJ2());
     }
     public void gestionAction(Partie p,Joueur j1,Joueur j2){
         for (int j = 0; j <6; j++) {
@@ -75,6 +80,26 @@ public class Controller {
 
         }
     }
+
+    public void gestionClick(int j,Partie p,Joueur j1)throws CoupException {
+        int l =p.getPuissance().getLigneVideByColonne(j);
+        p.getPuissance().setCoup(l,j,p.getJoueurCourant().getId());
+        boolean wincheck=p.getPuissance().estGagnant(l,j,p.getJoueurCourant().getId());
+        anInterface.setCoup(l,j);
+        if(wincheck){
+            //System.out.println(p.getJoueurCourant().getNom()+" ganient ");
+            p.getJoueurCourant().incrementerScore();
+            this.winScreen(p.getJoueurCourant());
+        }
+        if(j1==p.getJoueurCourant()){
+            p.modifieRole();
+            setCouleurButton(5 - l, j, "blue");
+        }
+        else{
+            p.modifieRole();
+            setCouleurButton(5 - l, j, "green");
+        }
+    }
     public void setCouleurButton(int lig,int col,String color){
         anInterface.getButton(5-lig,col).setStyle(
                 "-fx-background-radius: 150em;"
@@ -84,27 +109,35 @@ public class Controller {
                         + "-fx-max-height: 50px;"+
                         "-fx-background-color:"+color+";");
     }
-    public void gestionClick(int j,Partie p,Joueur j1)throws CoupException {
-        int l =p.getPuissance().getLigneVideByColonne(j);
-        p.getPuissance().setCoup(l,j,p.getJoueurCourant().getId());
-        boolean wincheck=p.getPuissance().estGagnant(l,j,p.getJoueurCourant().getId());
-        anInterface.setCoup(l,j,p.getJoueurCourant());
-
-        if(wincheck){
-            //System.out.println(p.getJoueurCourant().getNom()+" ganient ");
-            this.winScreen(p.getJoueurCourant());
-        }
-        if(j1==p.getJoueurCourant()){
-            p.modifieRole();
-        }
-        else{
-            p.modifieRole();
-        }
-    }
     public void winScreen(Joueur j){
         this.root.setCenter(null);
         this.root.setLeft(null);
         this.root.setRight(null);
         this.root.setCenter(new Label(j.getNom()+"  is the winner"));
+        j.incrementerScore();
+    }
+    public void export(GridPane g,Button b,TextField t)  {
+        root.setCenter(g);
+        this.root.setLeft(null);
+        this.root.setRight(null);
+        DAOPartie pp=new DAOPartie();
+        Partie pf=new Partie();
+        b.setOnAction(evnt->{
+            try{
+                String idp=t.getText();
+                pf.setId(Integer.parseInt(idp));
+                FileWriter f=new FileWriter(idp+".txt");
+                Partie p= pp.findById(pf);
+                f.write(p.getId()+"\n");
+                f.write(p.getJ1().getId()+"\n");
+                f.write(p.getJ2().getId()+"\n");
+                f.write(p.getJ1().getScore()+"\n");
+                f.write(p.getJ2().getScore()+"\n");
+                f.write(p.getLisCoupJ().toString()+"\n");
+                f.close();
+            }catch(IOException e){
+                System.out.println(e.getMessage());
+            }
+        });
     }
 }

@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Partie {
+	private int id;
 	private Joueur j1, j2;
 	private ArrayList<Coup> lisCoupJ = new ArrayList();
 	private int nbJetonJ1 = 21;
@@ -11,16 +12,27 @@ public class Partie {
 	private int rolejoueur;
 	private Game game;
 
+	public ArrayList<Coup> getLisCoupJ() {
+		return lisCoupJ;
+	}
 	public Partie() {
 		GestionJoueur gestionJoueur = new GestionJoueur();
 		List<Joueur> listeJoueur = gestionJoueur.getList();
 		j1 = listeJoueur.get(1);
-		j2 = listeJoueur.get(2);
+		j2 = listeJoueur.get(3);
 		this.rolejoueur = j1.getId();
 		game = new Game(j1.getId(), j2.getId());
 	}
 
-	public Partie(Joueur j1, Joueur j2) {
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public Partie(int id,Joueur j1, Joueur j2) {
+		this.id = id;
 		this.j1 = j1;
 		this.j2 = j2;
 		this.rolejoueur = j1.getId();

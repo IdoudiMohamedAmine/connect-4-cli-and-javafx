@@ -1,0 +1,30 @@
+
+q
+java:S3740'"/Provide the parametrized type for this generic.(×Ó8íáş½÷1J$eddd2f37-eb88-462d-9496-e42476e8d882
+w
+java:S3740+"/Provide the parametrized type for this generic.(“´üÍşÿÿÿÿ8íáş½÷1J$bb3a5f2a-48e6-454b-9635-75504b71e467
+r
+java:S37406"/Provide the parametrized type for this generic.(œ« ¹8íáş½÷1J$c9e368cf-52d9-4581-8274-1367289d895c
+’	java:S117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×Ó8ïáş½÷1J$bbc8cb64-44e8-468f-9e66-c47a759c9a3b
+“	java:S1176"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ« ¹8ïáş½÷1J$c3db6164-6629-4c31-a5d4-b3c675ecf44d
+˜
+java:S3655*"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(àß´şÿÿÿÿ8ƒâş½÷1J$d2bf64d7-7d55-453b-8d25-7b6e3a7bb20a
+~
+java:S1854"";Remove this useless assignment to local variable "importP".(¸çÀ´8ˆâş½÷1J$712fd743-2fc8-49da-a656-0b5f89fc8b42
+o
+java:S1481"",Remove this unused "importP" local variable.(¸çÀ´8Šâş½÷1J$c31dc049-b17d-4c4b-ad73-28cf7c74a0a7
+t
+java:S1602#",Remove useless curly braces around statement(ˆö»ûÿÿÿÿ8‹âş½÷1J$68eba27b-9ebe-47d2-a83b-bc5bf919f3cd
+t
+java:S1602$",Remove useless curly braces around statement(íëøøÿÿÿÿ8Œâş½÷1J$1cd3024a-ffdc-4512-8eae-27d8c0281b7c
+t
+java:S1602(",Remove useless curly braces around statement(ºãÛúÿÿÿÿ8âş½÷1J$11788863-8bd0-4da8-aa38-9f7f05523096
+›
+java:S1602*"SRemove useless curly braces around statement and then remove useless return keyword(àß´şÿÿÿÿ8âş½÷1J$e69f76a1-71ba-485e-89b3-f02f0952ee77
+t
+java:S1602,",Remove useless curly braces around statement(ùË—ƒûÿÿÿÿ8âş½÷1J$92805d4f-1e2e-4f2b-bd69-c25cdefa5df1
+l
+java:S1172C")Remove this unused method parameter "j2".(Ìï¯°8“âş½÷1J$ec883c8e-d9ea-4fbe-848b-f36213cd61da
+r	java:S106L"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8•âş½÷1J$2e1142b0-be53-4d6a-951f-88ed3fcc5d91
+ƒ	java:S125Z"<This block of commented-out lines of code should be removed.( ç­«şÿÿÿÿ8˜âş½÷1J$cbd35eda-5831-4356-b5d8-84183d1a142a
+s	java:S106‹"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8 âş½÷1J$948962ce-f79e-4ed7-914e-e13bf9f6bfb1

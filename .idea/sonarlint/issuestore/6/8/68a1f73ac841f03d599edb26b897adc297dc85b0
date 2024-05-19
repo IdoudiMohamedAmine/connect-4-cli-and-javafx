@@ -1,0 +1,20 @@
+
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(µšú‹J$57ffcf6c-ab40-4c57-b655-128850e8444b
+b	java:S131""Add a default case to this switch.(‡¥º€ûÿÿÿÿJ$c068bd4a-18f7-42b6-9c2b-aee86a525dad
+k	java:S106"+Replace this use of System.out by a logger.(¿½‡ùÿÿÿÿJ$433c5e92-3729-4dae-9cdf-3ceb68f52d70
+k	java:S106"+Replace this use of System.out by a logger.(¿½‡ùÿÿÿÿJ$56407e32-2420-491f-ab88-9f8b68321300
+k	java:S106"+Replace this use of System.out by a logger.(¿½‡ùÿÿÿÿJ$935637d5-24df-4db6-9e34-abbe9bae52ae
+k	java:S106""+Replace this use of System.out by a logger.(¸šñÙüÿÿÿÿJ$40cb5a69-28ef-400b-8632-e8a06c55975a
+k	java:S106&"+Replace this use of System.out by a logger.(¸šñÙüÿÿÿÿJ$ca74a2d6-7a6a-479c-a39d-42bc10a9c7c9
+k	java:S106*"+Replace this use of System.out by a logger.(¸šñÙüÿÿÿÿJ$4dfec536-378a-4c3b-ba16-8120b353f607
+d
+java:S14813"(Remove this unused "fin" local variable.(îÜÛJ$d9af5bef-fdbb-42e9-87f3-5ba83be2b009
+f	java:S106C"+Replace this use of System.out by a logger.(ˆ¸€J$a3dca05f-b766-4ddf-9ab7-9c8dcd95b684
+f	java:S106D"+Replace this use of System.out by a logger.(¥ÿê³J$6755a0be-da5d-451e-882b-ad719692a6e0
+k	java:S106E"+Replace this use of System.out by a logger.( ‘ìéşÿÿÿÿJ$1b603193-f98c-4f55-bcc5-54103183f0ba
+k	java:S106F"+Replace this use of System.out by a logger.(™Ï†ÕşÿÿÿÿJ$cd3b82ae-77ff-49e8-b8d8-0b462aad2a17
+k	java:S106G"+Replace this use of System.out by a logger.(ëÚ÷ÁúÿÿÿÿJ$b70d11ac-7339-4b53-963e-1d28f21b555e
+k	java:S106H"+Replace this use of System.out by a logger.(ÙŒ±ÿÿÿÿÿJ$879c70fb-d561-40c3-a393-5dbff4d3dff4
+f	java:S106I"+Replace this use of System.out by a logger.(è ÜüJ$a66bc8b3-1fe6-4cd0-a0a4-8a96202e7e0d
+k	java:S106J"+Replace this use of System.out by a logger.(«Ãø‘øÿÿÿÿJ$c07fd841-1e3a-4319-832a-e8d9f3428869
+f	java:S106K"+Replace this use of System.out by a logger.(±éõÅJ$a92ed6bf-f079-4766-8400-df70fb05ac34

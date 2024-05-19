@@ -1,5 +1,7 @@
 package com.example.Model;
 
+import com.example.DAO.DAOJoueur;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -13,31 +15,8 @@ public class GestionJoueur {
 		remplirList();
 	}
 	public void remplirList(){
-		String serveurBD = "jdbc:mysql://127.0.0.1:3306/pussance4?autoReconnect=true&useSSL=false";
-		String login="amine";
-		String motPasse="amine3349E";
-		Connection conn;
-		Statement ps;
-		ResultSet rs;
-		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-			conn = DriverManager.getConnection(serveurBD, login, motPasse);
-			String requete = "select * from joueur ";
-			ps = conn.createStatement();
-			rs = ps.executeQuery(requete);
-			while (rs.next()) {
-				list.add(new Joueur((int)rs.getLong("id"),rs.getString("Nom"),(int)rs.getLong("score"))) ;
-			}
-			rs.close();
-			ps.close();
-			conn.close();
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-			System.out.println("Execption");
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		DAOJoueur DAOjoueur=new DAOJoueur();
+		list=DAOjoueur.findAll();
 	}
 	public List<Joueur> listJoueurTrieByScore(){
 		Collections.sort(list);
