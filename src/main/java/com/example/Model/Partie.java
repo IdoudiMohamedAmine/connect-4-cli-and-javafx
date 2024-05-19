@@ -9,7 +9,7 @@ public class Partie {
 	private int nbJetonJ1 = 21;
 	private int nbJetonJ2 = 21;
 	private int scoreJ1;
-	private int scoreJ2;
+	private int scorej2;
 	private int rolejoueur;
 	private Game game;
 
@@ -122,11 +122,11 @@ public class Partie {
 	}
 
 	public int getScoreJ2() {
-		return scoreJ2;
+		return scorej2;
 	}
 
 	public void setScoreJ2(int scorej2) {
-		this.scoreJ2 = scorej2;
+		this.scorej2 = scorej2;
 	}
 
 	public int getScoreJ1() {

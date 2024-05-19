@@ -41,8 +41,10 @@ public class DAOPartie extends DAO<Partie> {
             String requete = "select * from Partie where idPartie = ? ";
             PreparedStatement ps=conn.prepareStatement(requete);
             ps.setString(1,""+id.getId());
-            rs = ps.executeQuery(requete);
-            partie=new Partie(rs.getInt("idPartie"),j.findById(new Joueur(rs.getInt("IdJoueur1"),null,0)),j.findById(new Joueur(rs.getInt("IdJoueur2"),null,0)));
+            rs = ps.executeQuery();
+            if(rs.next()){
+                partie=new Partie(rs.getInt("idPartie"),j.findById(new Joueur(rs.getInt("IdJoueur1"),null,0)),j.findById(new Joueur(rs.getInt("IdJoueur2"),null,0)));
+            }
             rs.close();
             ps.close();
         }
